@@ -1,0 +1,10 @@
+<h1>Session Storage & Local Storage</h1>
+
+<form [formGroup]="userLogin" (ngSubmit)="formSubmit()">
+    <label for="username">Username</label> &nbsp;
+    <input type="text" name="username" id="username" placeholder="Enter Username"> <br> <br>
+    <label for="password">Password</label> &nbsp;
+    <input type="password" name="password" id="password" placeholder="Enter Password"> <br> <br>
+    <button type="submit" (click)="saveLocalStorage()">Local Storage</button> &nbsp; &nbsp;
+    <button type="submit" (click)="saveSessionStorage()">Session Storage</button>
+</form>
